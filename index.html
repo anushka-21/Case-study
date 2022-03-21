@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Nivas</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "title">
+                    <h1>Anushka Mitra</h1>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>Nivas</h2>
+                <h5>Book your comfort stay today</h5>
+            </div>
+        </header>
+
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">home</a></li>
+                <li><a href = "#services">services</a></li>
+                <li><a href = "#rooms">rooms</a></li>
+                <li><a href = "#aboutus">about us</a></li>
+                <li><a href = "#contact">contact</a></li>
+            </ul>
+        </div>
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        
+        <!-- booking form -->
+        <div class = "book">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In : </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out : </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adult(s) : </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Children : </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Room(s) : </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+            </form>
+        </div>
+
+        <!-- Room -->
+            <div class = "room-title">
+                <h3>Rooms</h3>
+            </div>
+
+            <div class = "rooms-container">                
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img2.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h4>Hotel La Vista</h4>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Two beds, One bath
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Seaside View
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Room service included
+                            </li>
+                        </ul>
+
+                        <p class = "rate">
+                            <span>₹ 1499.00 /</span> Per Night
+                        </p>
+                        <button id = "btn1" type = "button" class = "btn">Confirm</button>
+                        <button id = "btn2" type = "button" class = "btn">Cancel</button>
+                        <button id = "btn3" type = "button" class = "btn">Update</button>
+                        <button id = "btn4" type = "button" class = "btn">Pending</button>
+                    </div>
+                </article>
+
+            </div>
+        <!-- end of room -->
+        
+        
+        <script src="script.js"></script>
+    </body>
+</html>
